@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/card_lamp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    card_view:cardElevation="2dp"
+    card_view:cardMaxElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_lamp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:padding="20dp"
+            tools:src="@drawable/lightbulb_on_outline" />
+
+        <TextView
+            android:id="@+id/tv_id_lamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/img_lamp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:text="Lamp 1" />
+
+        <TextView
+            android:id="@+id/tv_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_id_lamp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_toEndOf="@id/img_lamp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            tools:text="100" />
+
+        <TextView
+            android:id="@+id/tv_sub_power"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_id_lamp"
+            android:layout_alignBottom="@id/tv_power"
+            android:layout_toEndOf="@id/tv_power"
+            android:gravity="bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            tools:text=" A" />
+
+        <TextView
+            android:id="@+id/tv_last_update_lmp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_sub_power"
+            android:layout_alignBottom="@id/img_lamp"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_lamp"
+            android:gravity="bottom"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            tools:text="Last updated on 10:29:15" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

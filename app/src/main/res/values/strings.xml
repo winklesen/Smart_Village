@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Smart Village</string>
+
+    <!--Item-->
+    <string name="item_id">Lamp %1$d</string>
+    <string name="item_power">%1$d A</string>
+    <string name="item_humidity">%1$d ph</string>
+    <string name="item_update">Last updated on %1$s</string>
+
+    <!--Activity Main-->
+    <string name="smart_village">Smart Village</string>
+    <string name="smart_lamp">Smart Lamp</string>
+    <string name="security_system">Security System</string>
+    <string name="irrigation">Irrigation</string>
+    <string name="agriculture">Agriculture</string>
+    <string name="help">Help</string>
+    <string name="about">About</string>
+
+    <!--Card Dashboard-->
+    <string name="reservoir_status_filled">The reservoir has been filled</string>
+    <string name="reservoir_status_unfilled">The reservoir has not been filled</string>
+    <string name="connected_light">%1$d Connected light</string>
+    <string name="current_humidity">Current Humidity %1$d  Ph</string>
+
+    <!--Agriculture-->
+    <string name="choose_date">Choose date</string>
+    <string name="time">Time</string>
+    <string name="humidity">Humidity</string>
+
+    <!--Help-->
+    <string name="petunjukAgriculture">Detect soil moisture when dry and will provide water automatically from the shelter so as to minimize the failure of rice harvest due to drought or lack of water</string>
+    <string name="petunjukIrrigation">Water from the river will be brought into the water reservoir, then it will be stored if it is full and then the water will be used / flowed into the fields if the paddy field is dry</string>
+    <string name="petunjukSecuritySystem">We use the warning buttons in each house and there are fire detectors and flood detectors</string>
+    <string name="petunjukStreetLamp">When the day begins to darken the lights will automatically turn on and when the day returns to light the lights will automatically turn off by using Solar Panels and Batteries as Power</string>
+
+    <!--About-->
+    <string name="our_team">
+        TEI
+        \n\t-Alfian Dwi Susanto
+        \n\t-Assaufi Anggie Anggela Anggraeni
+        \n\t-Dwi Indra
+        \n\t-Mahran Mawarid
+        \n\t-Putri Dwi Angelina
+        \n\t-Robbiattul Hadawiah
+        \n\t-Suhendra
+        \nMM
+        \n\t- Barokah Ath Thariq
+        \n\t- Hiratsani Rabi
+        \n\t- Nindito Ramadhani
+        \n\t- Radjasa Wahyu Pratama
+        \n\t- Samuel Willem Alvito
+        \nRPL
+        \n\t- M. Hajid Alakthar
+        \n\t- Samuel B. Jeffersen
+    </string>
+    <string name="our_team_head">Our Team</string>
+    <string name="versi">Beta Version 0.1</string>
+    <string name="smktarunabhakti_net">smktarunabhakti.net</string>
+    <string name="instructions_for_use">Instructions For Use</string>
+    <string name="settings">Settings</string>
+
+    <!--Notification-->
+    <string name="panic_notification">Panic Notification</string>
+    <string name="fire_notification">Fire Notification</string>
+    <string name="flood_notification">Flood Notification</string>
+    <string name="panic_title">Panic!</string>
+    <string name="panic_message">Mr. %1$s presses the panic button!</string>
+    <string name="flood_title">Alert!</string>
+    <string name="flood_message">River water starts to overflow</string>
+    <string name="fire_title">Warning!</string>
+    <string name="fire_message">Detected smoke in the forest</string>
+
+    <!--Intro-->
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="start">Got It</string>
+    <string name="sistem_manajemen_desa_berbasis_iot">Sistem Manajemen Desa Berbasis IOT</string>
+    <string name="dapatkan_pemberitahuan_ketika_terdapat_tanda_tanda_bencana">Get notified when there are signs of disaster</string>
+    <string name="siaga_setiap_saat">Standby Every Time</string>
+    <string name="penyiram_cerdas">Smart Sprinklers</string>
+    <string name="siram_padimu_secara_otomatis_sesuai_kondisi_kelembapan">Water your rice automatically according to humidity conditions</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="pantau_riwayat_penyiraman_dan_kelembapan_padimu_secara_berkala">Monitor rice watering and humidity history regularly</string>
+    <string name="penerangan_otomatis">Automatic lighting</string>
+    <string name="terangi_jalanan_disaat_gelap_dengan_tenaga_solar_panel">Light the street in the dark with solar panel power</string>
+</resources>

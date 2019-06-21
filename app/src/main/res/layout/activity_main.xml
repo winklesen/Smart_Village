@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refresh_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                    app:elevation="1dp">
+
+                    <android.support.v7.widget.Toolbar
+                        android:id="@+id/tb_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:background="@color/colorPrimary"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        app:titleTextColor="@android:color/white" />
+
+                </android.support.design.widget.AppBarLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+                    android:paddingVertical="@dimen/activity_vertical_margin">
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/textView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/smart_village"-->
+                    <!--android:textAppearance="@style/TextAppearance.AppCompat.Headline"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textStyle="bold" />-->
+
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="32dp"
+                    android:layout_marginTop="-40dp"
+                    card_view:cardElevation="4dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="8dp">
+
+                        <ProgressBar
+                            android:id="@+id/pb_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true" />
+
+                        <ImageView
+                            android:id="@+id/img_light"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/lightbulb" />
+
+                        <TextView
+                            android:id="@+id/tv_light"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/img_light"
+                            android:layout_alignBottom="@id/img_light"
+                            android:layout_toEndOf="@id/img_light"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            tools:text="@string/connected_light" />
+
+                        <ImageView
+                            android:id="@+id/img_reservoir"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/img_light"
+                            android:src="@drawable/water" />
+
+                        <TextView
+                            android:id="@+id/tv_reservoir"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/img_reservoir"
+                            android:layout_alignBottom="@id/img_reservoir"
+                            android:layout_toEndOf="@id/img_reservoir"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            tools:text="@string/reservoir_status_filled" />
+
+                        <!--<ImageView-->
+                        <!--android:id="@+id/img_water"-->
+                        <!--android:layout_width="30dp"-->
+                        <!--android:layout_height="30dp"-->
+                        <!--android:layout_below="@id/img_reservoir"-->
+                        <!--android:src="@drawable/water_pump" />-->
+
+                        <!--<TextView-->
+                        <!--android:id="@+id/tv_water"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_alignTop="@id/img_water"-->
+                        <!--android:layout_alignBottom="@id/img_water"-->
+                        <!--android:layout_toEndOf="@id/img_water"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:paddingHorizontal="8dp"-->
+                        <!--tools:text="@string/watering_count"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Body2" />-->
+
+                        <ImageView
+                            android:id="@+id/img_humidity"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/img_reservoir"
+                            android:src="@drawable/sprout" />
+
+                        <TextView
+                            android:id="@+id/tv_humidity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@id/img_humidity"
+                            android:layout_alignBottom="@id/img_humidity"
+                            android:layout_toEndOf="@id/img_humidity"
+                            android:gravity="center_vertical"
+                            android:paddingHorizontal="8dp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                            tools:text="@string/current_humidity" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_lamp"
+                        style="@style/CardMenu"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageButton
+                            android:id="@+id/ibtn_lamp"
+                            style="@style/ImageButtonMenu"
+                            android:src="@drawable/lightbulb_green" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/smart_lamp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_agriculture"
+                        style="@style/CardMenu"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageButton
+                            android:id="@+id/ibtn_agriculture"
+                            style="@style/ImageButtonMenu"
+                            android:src="@drawable/seed_outline" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/agriculture"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_help"
+                        style="@style/CardMenu"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageButton
+                            android:id="@+id/ibtn_help"
+                            style="@style/ImageButtonMenu"
+                            android:src="@drawable/ic_help_outline" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/help"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_about"
+                        style="@style/CardMenu"
+                        card_view:cardCornerRadius="2dp"
+                        card_view:cardUseCompatPadding="true">
+
+                        <ImageButton
+                            android:id="@+id/ibtn_about"
+                            style="@style/ImageButtonMenu"
+                            android:src="@drawable/ic_info_outline" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|center"
+                            android:layout_marginBottom="4dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/about"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2" />
+
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextDesc"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:text="@string/versi"
+                android:textAlignment="center"
+                android:textColor="#555555" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

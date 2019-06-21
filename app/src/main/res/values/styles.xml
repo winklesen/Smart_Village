@@ -1,0 +1,57 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:fontFamily">@font/roboto_font</item>-->
+    </style>
+
+    <!--Style No Title-->
+    <style name="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--<style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+        <!--<item name="android:textColorPrimary">@color/colorPrimaryDark</item>-->
+    <!--</style>-->
+    <!---->
+    <!--<style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">-->
+        <!--<item name="android:textSize">21sp</item>-->
+    <!--</style>-->
+
+    <!--Tema DatePickerDialog-->
+
+    <style name="TextTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fontFamily">@font/roboto_font</item>-->
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+
+    <style name="TextDesc" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:fontFamily">@font/roboto_font</item>-->
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+    <style name="CardMenu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginVertical">8dp</item>
+        <item name="android:layout_marginHorizontal">8dp</item>
+    </style>
+
+    <style name="ImageButtonMenu">
+        <item name="android:layout_width">135dp</item>
+        <item name="android:layout_height">135dp</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+</resources>

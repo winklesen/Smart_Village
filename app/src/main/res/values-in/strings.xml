@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Smart Village</string>
+
+    <!--Item-->
+    <string name="item_id">Lampu %1$d</string>
+    <string name="item_power">%1$d A</string>
+    <string name="item_humidity">%1$d ph</string>
+    <string name="item_update">Terakhir diupdate pada %1$s</string>
+
+    <!--Activity Main-->
+    <string name="smart_village">Smart Village</string>
+    <string name="smart_lamp">Lampu Pintar</string>
+    <string name="security_system">Sistem Keamanan</string>
+    <string name="irrigation">Irigasi</string>
+    <string name="agriculture">Agrikultur</string>
+    <string name="help">Bantuan</string>
+    <string name="about">Tentang</string>
+
+    <!--Card Dashboard-->
+    <string name="reservoir_status_filled">Waduk sudah terisi penuh</string>
+    <string name="reservoir_status_unfilled">Waduk belum terisi penuh</string>
+    <string name="connected_light">%1$d Lampu terhubung</string>
+    <string name="current_humidity">Kelembapan terkini %1$d  Ph</string>
+
+    <!--Agriculture-->
+    <string name="choose_date">Pilih Tanggal</string>
+    <string name="time">Waktu</string>
+    <string name="humidity">Kelembapan</string>
+
+    <!--Help-->
+    <string name="petunjukAgriculture">Mendeteksi kelembaban tanah padi ketika kering dan akan memberikan air secara otomatis dari penampungan sehingga meminimalisir kegagalan panen padi akibat kemarau atau kekurangan air</string>
+    <string name="petunjukIrrigation">Air dari sungai akan dibawa masuk ke dalam penampungan air kemudian akan tersimpan jika sudah dalam keadaan penuh dan kemudian air akan dimanfaatkan/dialirkan ke sawah jika tanah sawah kering</string>
+    <string name="petunjukSecuritySystem">Kita menggunakan tombol peringatan di setiap rumah dan terdapat pendeteksi kebakaran dan pendeteksi banjir</string>
+    <string name="petunjukStreetLamp">Ketika hari mulai gelap maka lampu akan otomatis menyala dan ketika hari kembali terang maka lampu akan otomatis mati dengan menggunakan Solar Panel dan Baterai Sebagai Tenaga</string>
+
+    <!--About-->
+    <string name="our_team">
+        TEI
+        \n\t-Alfian Dwi Susanto
+        \n\t-Assaufi Anggie Anggela Anggraeni
+        \n\t-Dwi Indra
+        \n\t-Mahran Mawarid
+        \n\t-Putri Dwi Angelina
+        \n\t-Robbiattul Hadawiah
+        \n\t-Suhendra
+        \nMM
+        \n\t- Barokah Ath Thariq
+        \n\t- Hiratsani Rabi
+        \n\t- Nindito Ramadhani
+        \n\t- Radjasa Wahyu Pratama
+        \n\t- Samuel Willem Alvito
+        \nRPL
+        \n\t- M. Hajid Alakthar
+        \n\t- Samuel B. Jeffersen
+    </string>
+
+    <string name="our_team_head">Tim Kami</string>
+    <string name="versi">Versi Beta 0.1</string>
+    <string name="smktarunabhakti_net">smktarunabhakti.net</string>
+    <string name="instructions_for_use">Petunjuk Penggunaan</string>
+    <string name="settings">Pengaturan</string>
+
+    <!--Notification-->
+    <string name="panic_notification">Pemberitahuan Panik</string>
+    <string name="fire_notification">Pemberitahuan Kebakaran</string>
+    <string name="flood_notification">Pemberitahuan Banjir</string>
+    <string name="panic_title">Panik!</string>
+    <string name="panic_message">Pak %1$s menekan tombol panik!</string>
+    <string name="flood_title">Waspada!</string>
+    <string name="flood_message">Air sungai mulai meluap</string>
+    <string name="fire_title">Peringatan!</string>
+    <string name="fire_message">Terdeteksi asap di hutan</string>
+
+    <!--Intro-->
+    <string name="skip">Lanjut</string>
+    <string name="next">Next</string>
+    <string name="start">Mulai</string>
+    <string name="sistem_manajemen_desa_berbasis_iot">Sistem Manajemen Desa Berbasis IOT</string>
+    <string name="dapatkan_pemberitahuan_ketika_terdapat_tanda_tanda_bencana">Dapatkan pemberitahuan ketika terdapat tanda tanda bencana</string>
+    <string name="siaga_setiap_saat">Siaga Setiap Saat</string>
+    <string name="penyiram_cerdas">Penyiram Cerdas</string>
+    <string name="siram_padimu_secara_otomatis_sesuai_kondisi_kelembapan">Siram padimu secara otomatis sesuai kondisi kelembapan</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="pantau_riwayat_penyiraman_dan_kelembapan_padimu_secara_berkala">Pantau riwayat penyiraman dan kelembapan padimu secara berkala</string>
+    <string name="penerangan_otomatis">Penerangan Otomatis</string>
+    <string name="terangi_jalanan_disaat_gelap_dengan_tenaga_solar_panel">Terangi jalanan disaat gelap dengan tenaga solar panel</string>
+</resources>

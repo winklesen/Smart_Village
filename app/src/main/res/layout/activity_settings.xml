@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="@dimen/activity_horizontal_margin"
+    android:paddingVertical="@dimen/activity_vertical_margin"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:paddingVertical="8dp"-->
+            <!--android:text="@string/choose_language"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Medium"-->
+            <!--android:textColor="@android:color/black" />-->
+
+        <!--<RadioGroup-->
+            <!--android:id="@+id/rg_options"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_en"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/english"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
+
+            <!--<RadioButton-->
+                <!--android:id="@+id/rb_in"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/indonesia"-->
+                <!--android:textAppearance="@style/TextAppearance.AppCompat.Small" />-->
+        <!--</RadioGroup>-->
+
+        <Switch
+            android:id="@+id/switch_panic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/panic_notification"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Switch
+            android:id="@+id/switch_flood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/flood_notification"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Switch
+            android:id="@+id/switch_fire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="@string/fire_notification"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_save"-->
+        <!--style="@style/Widget.AppCompat.Button.Colored"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:text="@string/save" />-->
+
+</RelativeLayout>
